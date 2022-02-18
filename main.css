@@ -65,17 +65,18 @@ a{
     transform: scale(1.1);
 }
 
-.hero-wrapper{
-    height: 100vh;
-}
+
 
 .hero-img{
     height: 100vh;
+    width: 100%;
     object-fit: cover;
 }
 
 .hero-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: relative;
     text-align: center;
@@ -83,14 +84,14 @@ a{
 
 .hero-text{
     position: absolute;
-    inset: 20rem;
     font-size: 7rem;
     color: var(--colors-tan);
     font-family: var(--font-serif);
 }
 
 .subhero{
-    max-width: min(calc(100%-2rem), 80rem);
+    max-width: min(calc(100%-2rem), 70rem);
+    padding: 2rem;
     display: flex;
     position: relative;
     align-items: center;
@@ -128,6 +129,7 @@ a{
     inset: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: var(--space-10);
     align-items: center;
     justify-content: center;
@@ -173,13 +175,12 @@ a{
     align-items: center;
     margin: 5rem 0 auto;
     padding: var(--space-10);
-    height: 30vh;
     background-color: var(--font-gray900);
     color: var(--font-silver);
 }
 .footer-content{
     display: flex;
-    width: 85rem;
+    width: min(calc(100%-3rem), 75rem);
     justify-content: space-between;
     align-items: center;
 }
@@ -193,13 +194,13 @@ a{
 
 .footer-nav{
     display: flex;
-    text-align: left;
     font-size: large;
     gap: 2rem;
     
 }
 
 .footer-nav>a{
+    transition: var(--transitions-default);
     color: var(--font-silver);
 }
 
