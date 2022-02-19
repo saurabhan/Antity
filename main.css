@@ -382,6 +382,7 @@ a{
     background-color: var(--colors-black);
     color: var(--font-white);
     padding: var(--space-10);
+    cursor: pointer;
     border: none;
     font-size: large;
     letter-spacing: var(--letterSpacings-wider);
