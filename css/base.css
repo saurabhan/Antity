@@ -140,6 +140,12 @@
   --font-gray700: #444444;
   --font-gray800: #333333;
   --font-gray900: #111111;
+  --colors-red100: #fbc4d5;
+  --colors-red200: #fda0a5;
+  --colors-red300: #fb7085;
+  --colors-red400: #f74c77;
+  --colors-red500: #f21361;
+  --colors-red600: #d00d65;
   --font-primaryLight: var(--colors-tan);
   --font-primary: var(--colors-bronze);
   --font-primaryShadow: var(--colors-beige);

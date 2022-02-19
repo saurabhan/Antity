@@ -1,5 +1,14 @@
 @import url(./css/base.css);
 
+/* utils */
+
+.flex-col{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
 a{
     text-decoration: none;
 }
@@ -219,7 +228,6 @@ a{
     gap: 2rem;
     width: calc(100% - 10rem);
     margin: var(--space-10) auto;
-    /* background-color: palegreen ; */
 }
 
 .sidebar{
@@ -258,6 +266,7 @@ a{
 }
 
 .product-card{
+    position: relative;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -397,4 +406,20 @@ a{
 
 .checkout-button:active{
     transform: scale(0.99);
+}
+
+/* Wishlist */
+
+.fav-icon{
+    position: absolute;
+    cursor: pointer;
+    fill:var(--colors-red600);
+    color: var(--font-white);
+    inset: 10;
+    transition: var(--transitions-default);
+}
+
+.fav-icon:hover{
+    transform: scale(1.2);
+    fill: var(--colors-red400);
 }
