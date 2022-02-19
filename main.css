@@ -423,3 +423,50 @@ a{
     transform: scale(1.2);
     fill: var(--colors-red400);
 }
+
+/* login page */
+
+.login-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-details>input{
+    padding: var(--space-2);
+    font-size: var(--fontWeights-bold);
+}
+
+.login-button{
+    padding: 1rem;
+    width: 15rem;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacings-wider);
+    background-color: var(--colors-black);
+    color: var(--font-white);
+    transition: var(--transitions-default);
+}
+
+.login-button:hover{
+    background-color: var(--colors-bronze);
+    box-shadow: var(--shadows-lg);
+    transform: scale(1.01);
+}
+
+.login-button:active{
+    transform: scale(0.99);
+}
+
+
+.button-google:hover{
+    background-color: var(--colors-white);
+    color: blue;
+}
+
+.button-apple:hover{
+    background-color: var(--colors-white);
+    color: var(--font-black);
+}
