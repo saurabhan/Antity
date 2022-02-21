@@ -440,6 +440,7 @@ a{
 .login-button{
     padding: 1rem;
     width: 15rem;
+    cursor: pointer;
     border: none;
     font-size: large;
     font-weight: bold;
